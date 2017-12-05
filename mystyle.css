@@ -35,3 +35,39 @@ header li{
     display:inline;
     padding: 0 20px 20px;
 }
+header nav{
+float:right;
+margin-top:10px;
+}
+
+header a: hover{
+    color:#cccccc;
+    font-weight: bold
+} 
+
+#showcase{
+    min-height: 400px;
+    background:url('../img')
+}
+#boxes .box {
+    float:left;
+    text-align: center;
+    width: 30%;
+    padding:10px;
+}
+
+footer{
+    padding:20px;
+    margin-top:20px;
+    color: #ffffff;
+    background-color:#e8491d;
+    text-align: center;
+    
+}
+a:link{
+    color: blue;
+    
+}
+a:visitedlink{
+    color:purple;
+}
