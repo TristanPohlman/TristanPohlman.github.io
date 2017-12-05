@@ -71,3 +71,6 @@ a:link{
 a:visitedlink{
     color:purple;
 }
+a:hover{
+    color:purple;
+}
