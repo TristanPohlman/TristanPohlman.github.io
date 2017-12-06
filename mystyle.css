@@ -65,7 +65,7 @@ footer{
     
 }
 a:link{
-    color: blue;
+    color:blue;
     
 }
 a:visitedlink{
@@ -73,4 +73,11 @@ a:visitedlink{
 }
 a:hover{
     color:purple;
+}
+
+
+/* main col*/
+article#main-col{
+    float:left;
+    width:65%;
 }
