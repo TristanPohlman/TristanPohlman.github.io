@@ -91,7 +91,7 @@ a:hover{
 
 
 /* main col*/
-article#main-col{
+#main-col{
     float:left;
     width:65%;
 }
