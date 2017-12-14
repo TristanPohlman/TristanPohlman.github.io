@@ -54,7 +54,8 @@ header a: hover{
 
 #showcase{
     min-height: 400px;
-    background:url('chef.jpg') no-repeat 0; 
+    background:url('chef.jpg') no-repeat 0;
+    text-align: center
 }
 
 #showcase h1{
