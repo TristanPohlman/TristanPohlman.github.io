@@ -73,6 +73,9 @@ margin-top: 20px
     width:30%;
     padding:10px;
 }
+#boxes.box img{
+width:90px;
+}
 #boxes .box2 {
 float:right;
 text-align: center;
@@ -104,8 +107,6 @@ a:hover{
     width:65%;
 }
 
-
-
 /* Media */
 @media(max-width: 768px){
     header #branding,
@@ -124,4 +125,3 @@ a:hover{
 h1{ 
      margin-top:40px;
 }
-
