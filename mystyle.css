@@ -64,10 +64,13 @@ header a: hover{
  margin-bottom:10px;
 
 }
+#boxes{
+margin-top: 20px
+}
 #boxes .box {
-    float:left;
+    float:right;
     text-align: center;
-    width: 30%;
+    width:30%;
     padding:10px;
 }
 #boxes .box2 {
