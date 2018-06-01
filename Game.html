@@ -1,0 +1,89 @@
+<html>
+<head>
+    
+<title>
+
+<script type = "text/javascript" src="js/processing.js">
+    
+</script>
+
+</title>
+</head>
+<body>
+<script type="text/processing"></body>
+PImage back;
+PImage boo;
+PImage fire;
+int count = 0;
+int Vy = 0;
+int y = 0;
+int gamestate = 1;
+
+void setup(){
+  size(1849,1000);
+  back = loadImage("./img/city.png");
+  boo = loadImage("./img/boo.png");
+  fire = loadImage("./img/fireball.png");
+  //image(back,0,0);
+}
+
+  
+void draw(){
+  if (gamestate == 0){
+    image(back,count,0);
+    image(back, width + count, 0);
+    count --;
+    if (count < -1849){
+      count = 0;
+   }
+   image(boo,100,y);
+   //ellipse(100, y, 40, 40);
+   
+   
+   if(count%3 ==0){
+   Vy += 1;
+   }
+   y = y + Vy;
+  }
+  if (y < -60|| y > 1000){
+    gamestate = 1;
+}
+  if (gamestate == 1){
+    background(0);
+    textSize(50);
+    text("You Lost Restart?", 725,500); 
+    if (mousePressed){
+      y = 0;
+      gamestate = 0;
+    }
+  }
+}
+void mousePressed(){
+    Vy = -10;
+ }
+void keyPressed(){
+    if(keyCode==32);
+    Vy = -10; {
+    }
+    if(keyCode==DOWN){ 
+    Vy = +10; 
+    }
+
+
+   
+
+
+ if (gamestate == 3) {
+  background(0);
+  textSize(50);
+  text("Welcome Click to Begin", 725,500);
+  if(mousePressed){
+    y = 0;
+    gamestate = 0;
+  }
+ }
+}    
+</script>
+<canvas id="sketch" style="border: 1px solid black;">
+</canvas>
+</html>
